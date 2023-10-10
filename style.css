@@ -1,0 +1,93 @@
+body {
+	background-color: #D9CBBB;
+	font-family: helvetica;
+	margin: 0px;
+	padding: 0px;
+}
+
+.recParents{
+	display: flex;
+	justify-content: center;
+}
+
+.recParents div{
+	background-color: #d2e669;
+	border: 5px solid #eb5bb9;
+	margin: 2px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.recParents > div{
+	background-color: #4caec1;
+}
+
+.recParents div > p.heading {
+    color: white;
+}
+
+.recParents div > p{
+	color: #ed735e;
+	text-align: center;
+	padding: 0px;
+}
+
+.recParents, div + p{
+	background-color: #55ba84;
+	border: 5px solid #eb5bb9;
+	padding: 20px;
+}
+
+.recParents div:nth-child(3){
+	background-color: #a94e8f;
+	border: 5px solid #95c862;
+}
+
+.recParents div:nth-child(3) > p{
+	color: #eab4a2;
+}
+
+.recParents div:nth-child(4){
+	background-color: #c98f9f;
+	border: 5px solid #3a6642;
+}
+
+.recParents div:nth-child(4) > p{
+	color: #eae05b;
+}
+
+.circ {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	background-color: #fff;
+    padding: 50px;
+/*    border: 5px solid;*/
+}
+
+.circ div{
+/*	float: left;*/
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 100%;
+}
+
+.circ > div:first-child{
+	text-align: center;
+	color: gray;
+    background: lightblue;
+    border: 5px solid pink;
+    transform: rotate(50deg);;
+}
+
+.circ div:nth-child(2) {
+	width: 400px;
+    height: 400px;
+    background: orange;
+}
+
+.circ > div:nth-child(2):hover {
+    background: red;
+}
+
